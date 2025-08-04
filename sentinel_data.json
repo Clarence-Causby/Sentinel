@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2025-08-01T23:55:00Z",
+    "threat_type": "Brute Force Attack",
+    "status": "Blocked",
+    "severity": "High"
+  },
+  {
+    "timestamp": "2025-08-01T23:50:00Z",
+    "threat_type": "Phishing Attempt",
+    "status": "Quarantined",
+    "severity": "Medium"
+  },
+  {
+    "timestamp": "2025-08-01T23:45:00Z",
+    "threat_type": "Malware Injection",
+    "status": "Blocked",
+    "severity": "Critical"
+  }
+]

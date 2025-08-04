@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentinel Lite – Cyber Defense Interface</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>SENTINEL LITE</h1>
+    <h2>Cyber Defense Interface</h2>
+  </header>
+
+  <main>
+    <section class="card scan-panel">
+      <h3>Digital DNA Scan</h3>
+      <p id="scan-status">Awaiting Scan...</p>
+      <button onclick="startScan()">Start Scan</button>
+    </section>
+
+    <section class="card uplink-panel">
+      <h3>Encrypted Uplink</h3>
+      <p id="uplink-status">Secure Tunnel: OFFLINE</p>
+      <button onclick="toggleUplink()">Toggle Uplink</button>
+    </section>
+
+    <section class="card logs-panel">
+      <h3>Threat Logs</h3>
+      <button onclick="viewLogs()">View Logs</button>
+      <div id="logPanel"></div> <!-- ✅ This was missing -->
+    </section>
+
+    <section class="card terminal-panel">
+      <h3>Terminal Output</h3>
+      <button onclick="simulateOutput()">Simulate Output</button>
+      <pre id="terminal-output"></pre>
+    </section>
+
+    <section class="card assistant-panel">
+      <h3>SARA // Sentinel AI Reporting Agent</h3>
+      <p id="sara-response">Awaiting query...</p>
+      <button onclick="askSARA()">Ask SARA</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sentinel Lite</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
